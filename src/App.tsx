@@ -8,7 +8,7 @@ import { EmptyState } from './components/EmptyState';
 import { useRecipes } from './hooks/useRecipes';
 import { useFavorites } from './hooks/useFavorites';
 import { Recipe, SearchFilters } from './types/recipe';
-import { Footer } from './components/footer';
+import { Footer } from './components/Footer';
 
 function App() {
   const [currentView, setCurrentView] = useState<'search' | 'favorites'>('search');
