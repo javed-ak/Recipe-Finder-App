@@ -8,6 +8,7 @@ import { EmptyState } from './components/EmptyState';
 import { useRecipes } from './hooks/useRecipes';
 import { useFavorites } from './hooks/useFavorites';
 import { Recipe, SearchFilters } from './types/recipe';
+import { Footer } from './components/footer';
 
 function App() {
   const [currentView, setCurrentView] = useState<'search' | 'favorites'>('search');
@@ -122,9 +123,7 @@ function App() {
           />
         )}
       </main>
-
-      {/* API Key Notice */}
-      
+      <Footer />
     </div>
   );
 }
